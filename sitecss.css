@@ -1,0 +1,279 @@
+
+/*******************************************************************
+* I declare that my assignment is wholly my own work in accordance
+with Seneca Academic Policy. No part of this assignment has been
+copied manually or electronically from any other source (including
+web sites) except for the information supplied by the WEB222
+instructors and / or made available in this assignment for my use.
+I also declare that no part of this assignment has been distributed
+to other students.
+Name: Cagdas Muldur
+Dated: 11/29/2019
+********************************************************************/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    /* height:1px; */
+    border:0;  
+    border-top:3px solid #8e562e;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* ///////////  MY STYLES   \\\\\\\\\\\\ */
+/* colors
+    #41D3BD
+    #FFFFF2
+    #363537
+    #ffc83d
+    #ff5757
+     */
+
+body {
+    background-color: #fff5dd;
+    color: #363537;
+}
+
+header{
+    height: 10%;
+    display: flex;
+    width: 100%;
+    font-family: 'monsterrat', sans-serif;
+    font-weight: 500;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+/* BANNER */
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    padding: 20px;
+}
+#search {
+    display: flex;
+    background-color: #ff5757;
+    height: 30px;
+    padding: 10px 10px;
+    border-radius: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+#search input {
+    width: 350px;
+    text-align: left;
+    margin: auto;
+    /* Getting rid of ugly website searchbox style */
+    outline: none;
+    background: none;
+    border: none;
+}
+#search .search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+    /* Getting rid of ugly website searchbox style */
+    outline: none;
+    background: none;
+    border: none;
+}
+#search .search-btn a {
+    /* Increasing clickable area of button */
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 1em;     
+    margin: -1em; 
+    border-radius: 30px;
+    background-color: #ffc83d;
+    text-decoration: none;
+    
+
+}
+#search .search-btn :hover {
+    cursor: pointer;
+    background-color: rgb(174, 223, 216);
+}
+/* NAVBAR */
+#navber {
+    width: 100vw;
+}
+#navbar-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    padding: 20px 0;
+    
+}
+/* #navbar-nav ul:hover {
+    background-color: rgba(255, 255, 242, 0.843);
+} */
+.category {
+    width: 100px;
+    height: 40px; 
+    /* margin: 30px 0; */
+    /* margin: 10px 20px; */  
+    /* text-align: center; */
+    /* flex-direction: column; */
+}
+
+ul li a {
+    position: relative;
+    border-radius: 500px;
+    text-decoration: none;
+    color: #363537;
+    padding: 30px 30px;
+    text-align: center;
+    
+    
+}
+ul li a:hover {
+
+    background-color: rgb(174, 223, 216);
+}
+
+/* MAIN */
+
+main {
+    margin-top: 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+.tbl-name {
+    width: 80%;
+    padding: 10px 0;
+    margin: 10px 0;
+    display: inline-block;
+    background-color: rgb(174, 223, 216);
+    font-family: 'monsterrat', sans-serif;
+
+}
+.products {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.products .card {
+    padding: 15px 0;
+    width: 250px;
+    height: 280px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: rgb(248, 248, 204);
+}
+.card .img {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+/* FOOTER */
+
+footer {
+    background-color: #000000dc;
+    height: 20vh;
+    color: white;
+}
