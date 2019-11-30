@@ -156,6 +156,7 @@ header{
     border-radius: 40px;
     justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
 }
 #search input {
     width: 350px;
@@ -165,6 +166,7 @@ header{
     outline: none;
     background: none;
     border: none;
+    color: black;
 }
 #search .search-btn {
     width: 40px;
@@ -175,19 +177,13 @@ header{
     outline: none;
     background: none;
     border: none;
+    /*  */   
 }
-#search .search-btn a {
-    /* Increasing clickable area of button */
-    display: inline-block;     
-    position: relative;    
-    z-index: 1;     
-    padding: 1em;     
-    margin: -1em; 
+#search .search-btn i{
     border-radius: 30px;
     background-color: #ffc83d;
     text-decoration: none;
-    
-
+    padding: 10px;
 }
 #search .search-btn :hover {
     cursor: pointer;
@@ -201,8 +197,9 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40px;
-    padding: 20px 0;
+    height: 20px;
+    padding: 10px 0;
+    margin-top: 30px;
     
 }
 /* #navbar-nav ul:hover {
@@ -219,10 +216,10 @@ header{
 
 ul li a {
     position: relative;
-    border-radius: 500px;
+    border-radius: 10px;
     text-decoration: none;
     color: #363537;
-    padding: 30px 30px;
+    padding: 20px 30px;
     text-align: center;
     
     
@@ -230,7 +227,10 @@ ul li a {
 ul li a:hover {
 
     background-color: rgb(174, 223, 216);
+    font-size: large;
+    font-style: italic;
 }
+
 
 /* MAIN */
 
@@ -260,7 +260,7 @@ main {
     padding: 15px 0;
     width: 250px;
     height: 280px;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     border: 1px solid #000000;
     background-color: rgb(248, 248, 204);
@@ -273,7 +273,20 @@ main {
 /* FOOTER */
 
 footer {
-    background-color: #000000dc;
-    height: 20vh;
-    color: white;
+    background-color: rgb(174, 223, 216);
+    height: 150px;
+    padding-top: 40px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+
+}
+
+footer .footer-div {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 2px;
+    color: #363537;
 }
